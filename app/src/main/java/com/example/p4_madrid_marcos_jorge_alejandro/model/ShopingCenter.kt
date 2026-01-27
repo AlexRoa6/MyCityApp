@@ -5,5 +5,6 @@ import androidx.annotation.StringRes
 
 data class ShopingCenter (
     @StringRes val nameRes: Int,
-    @DrawableRes val imgRes: Int
+    @DrawableRes val imgRes: Int,
+    val isExpanded: Boolean = false
 )
