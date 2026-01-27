@@ -24,6 +24,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.P4_Madrid_Marcos_Jorge_AlejandroTheme
+import com.example.p4_madrid_marcos_jorge_alejandro.ui.views.ShopingCenterView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +41,7 @@ class MainActivity : ComponentActivity() {
 @PreviewScreenSizes
 @Composable
 fun P4_Madrid_Marcos_Jorge_AlejandroApp() {
-
+    ShopingCenterView()
 }
 
 
