@@ -1,6 +1,8 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.ui.views
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Favorite
@@ -41,7 +43,14 @@ fun ShopingCenterView(){
         }
     ) {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+            LazyColumn (Modifier.padding(innerPadding)){
 
+            }
         }
     }
+}
+
+@Composable
+fun ShopingCard() {
+
 }
