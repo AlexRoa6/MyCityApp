@@ -1,6 +1,5 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.viewModels
 
-import com.example.p4_madrid_marcos_jorge_alejandro.model.ShopingCenter
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.views.ShopingCenterView
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
