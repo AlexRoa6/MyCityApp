@@ -9,6 +9,9 @@ import kotlinx.coroutines.flow.update
 
 data class ShopingCenterUiState(
     val shopingCenters: List<ShopingCenter> = emptyList()
+
+
+
 )
 
 class ShopingCenterViewModel{
