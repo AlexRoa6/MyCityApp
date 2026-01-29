@@ -20,9 +20,20 @@ class ShopingCenterViewModel(private val repository: ShopingCenterRepository): V
     private val _uiSate = MutableStateFlow(ShopingCenterUiState())
     val uiState: StateFlow<ShopingCenterUiState> =_uiSate.asStateFlow()
 
+
+    init {
+        getShopingCenters()
+    }
+
     fun onClickCard(shopingCenter: ShopingCenter){
         viewModelScope.launch {
             repository.onCLickCard(shopingCenter)
+        }
+    }
+
+    fun getShopingCenters(){
+        viewModelScope.launch {
+            _uiSate.update { it.copy(repository.getShopingCenters()) }
         }
     }
 
