@@ -114,4 +114,6 @@
 
         <string name="sexta_avenida">Sexta Avenida</string>
         <string name="sexta_avenida_desc">Centro comercial en Pozuelo de Alarcón</string>
+    <string name="title_centros_comerciales">Centros Comerciales for you</string>
+        <string name="centros_comerciales_description">Descubre los mejores y mas grandes centros comerciales</string>
 </resources>

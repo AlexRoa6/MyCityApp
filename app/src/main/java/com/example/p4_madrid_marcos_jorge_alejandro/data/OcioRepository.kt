@@ -14,7 +14,7 @@ class OcioRepository {
 
             Ocio(
                 nameRes = R.string.warner,
-                imgRes = R.drawable.ParqueWarnerMadrid,
+                imgRes = R.drawable.parque_warner,
                 descriptionRes = R.string.desc_Warner
             )
         )
