@@ -19,8 +19,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 
 
-
-
 @Composable
 fun ShopingCenterView(){
     var currentDestination by rememberSaveable { mutableStateOf(AppDestination.HOME) }
