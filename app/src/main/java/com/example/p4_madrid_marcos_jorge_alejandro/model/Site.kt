@@ -7,5 +7,6 @@ import androidx.annotation.StringRes
 open class Site (
     @StringRes val nameRes: Int,
     @DrawableRes val imgRes: Int,
-    @StringRes val descriptionRes: Int
+    @StringRes val descriptionRes: Int,
+    val isExpanded: Boolean
 )
