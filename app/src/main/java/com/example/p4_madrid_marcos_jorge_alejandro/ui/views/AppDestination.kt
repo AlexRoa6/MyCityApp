@@ -10,7 +10,8 @@ enum class AppDestination (
     val label: String,
     val icon: ImageVector,
 ) {
-    HOME("Home", Icons.Default.Home),
+
     FAVORITES("Favorites", Icons.Default.Favorite),
+    HOME("Home", Icons.Default.Home),
     PROFILE("Profile", Icons.Default.AccountBox),
 }
