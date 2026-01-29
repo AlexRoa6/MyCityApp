@@ -62,4 +62,15 @@
         aficionados al tenis.
     </string>
 
+        <string name="parqueAtracc">Parque de atracciones de Madrid</string>
+        <string name="desc_Parque"> El Parque de Atracciones de Madrid, con sus atracciones únicas para los más mayores
+        y con atracciones únicas con temáticas Nickelodeon para los más pequeños.</string>
+
+<string name="warner"> Parque Warner Madrid</string>
+<string name="desc_Warner"> El Parque Warner de Madrid es uno de los mejores de toda Europa.
+        Desde atracciones inimaginables de la mano de superman, hasta los espectaculos más increibles
+        para los mas peques de la casa de la mano de bob esponja y patricio </string>
+
+        <string name="faunia"> Faunia Madrid</string>
+        <string name="desc_Faunia"></string>
 </resources>
