@@ -1,20 +1,30 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.viewModels
 
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.p4_madrid_marcos_jorge_alejandro.data.ShopingCenterRepository
 import com.example.p4_madrid_marcos_jorge_alejandro.model.ShopingCenter
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.views.ShopingCenterView
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 
 data class ShopingCenterUiState(
     val shopingCenters: List<ShopingCenter> = emptyList()
 )
 
-class ShopingCenterViewModel{
+class ShopingCenterViewModel(private val repository: ShopingCenterRepository): ViewModel(){
 
     private val _uiSate = MutableStateFlow(ShopingCenterUiState())
     val uiState: StateFlow<ShopingCenterUiState> =_uiSate.asStateFlow()
+
+    fun onClickCard(shopingCenter: ShopingCenter){
+        viewModelScope.launch {
+            repository.onCLickCard(shopingCenter)
+        }
+    }
 
 
 }
