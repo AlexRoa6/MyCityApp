@@ -25,7 +25,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun P4_Madrid_Marcos_Jorge_AlejandroApp() {
     ShopingCenterView()
-
 }
 
 
