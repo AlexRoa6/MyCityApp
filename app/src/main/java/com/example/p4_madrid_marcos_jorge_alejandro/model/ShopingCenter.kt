@@ -5,4 +5,5 @@ import androidx.annotation.StringRes
 
 class ShopingCenter(
     nameRes: Int,
-    imgRes: Int): Site(nameRes, imgRes)
+    imgRes: Int,
+    descriptionRes: Int): Site(nameRes, imgRes, descriptionRes)
