@@ -1,31 +1,21 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.ui.views
 
-import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
 import androidx.compose.runtime.Composable
@@ -82,13 +72,22 @@ fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (Shop
         }
     ) {
         Scaffold(modifier = Modifier.fillMaxSize()) { paddingValues ->
-            LazyVerticalGrid (
-                columns = GridCells.Adaptive(minSize = (150.dp)),
-                contentPadding = PaddingValues(bottom = paddingValues.calculateBottomPadding() + 16.dp, start = 16.dp, end = 16.dp, top = paddingValues.calculateTopPadding())
-            ){
+            Column {
+                TitleCategory()
+                LazyVerticalGrid(
+                    columns = GridCells.Adaptive(minSize = (150.dp)),
+                    contentPadding = PaddingValues(
+                        bottom = paddingValues.calculateBottomPadding() + 16.dp,
+                        start = 16.dp,
+                        end = 16.dp,
+                        top = paddingValues.calculateTopPadding()
+                    )
+                ) {
 
-                items(shopingCenters){ shopingCenter ->
-                    ShopingCard(shopingCenter, { onClickCard(shopingCenter) })
+
+                    items(shopingCenters) { shopingCenter ->
+                        ShopingCard(shopingCenter, { onClickCard(shopingCenter) })
+                    }
                 }
             }
         }
@@ -127,6 +126,21 @@ fun ShopingCenterImage(shopingCenter: ShopingCenter, modifier: Modifier = Modifi
             modifier = Modifier
                 .fillMaxWidth()
                 .aspectRatio(0.80f)
+        )
+    }
+}
+
+@Composable
+fun TitleCategory(modifier: Modifier = Modifier) {
+    Column (Modifier.padding(start = 28.dp, end = 28.dp, top = 28.dp)){
+        Text(
+            text = stringResource(R.string.title_centros_comerciales),
+            color = MaterialTheme.colorScheme.tertiary
+        )
+        Spacer(Modifier.height(8.dp))
+        Text(
+            text = stringResource(R.string.centros_comerciales_description),
+            color = MaterialTheme.colorScheme.secondary
         )
     }
 }
