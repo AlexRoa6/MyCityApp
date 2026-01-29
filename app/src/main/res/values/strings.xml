@@ -1,3 +1,65 @@
+
 <resources>
-    <string name="app_name">P4_Madrid_Marcos_Jorge_Alejandro</string>
+
+<string name="app_name">P4_Madrid_Marcos_Jorge_Alejandro</string>
+
+<string name="futbol">Fútbol</string>
+<string name="basket">Baloncesto</string>
+<string name="atletismo">Atletismo / Running</string>
+<string name="tenis">Tenis</string>
+
+<string name="Titulo_realmadrid">Real Madrid</string>
+<string name="descripcion_realmadrid">
+        El estadio Santiago Bernabéu es conocido en todo el mundo por sus noches mágicas,
+        especialmente en las competiciones europeas. A lo largo de la historia, el Real Madrid
+        ha protagonizado remontadas y partidos inolvidables que han convertido su estadio
+        en un lugar mítico del fútbol.
+    </string>
+
+<string name="titulo_atletico">Atlético de Madrid</string>
+<string name="descripcion_atleti">
+        El estadio Riyadh Air Metropolitano representa el carácter del Atlético de Madrid:
+        esfuerzo, resistencia y unión con su afición. En los grandes partidos, el estadio
+        se transforma en un fortín donde cada balón se pelea y cada acción se vive con
+        máxima intensidad.
+    </string>
+
+<string name="titulo_baloncesto">Real Madrid Baloncesto</string>
+<string name="descripcion_baloncesto">
+        El Real Madrid Baloncesto es uno de los clubes más importantes de Europa, con una
+        larga trayectoria de éxitos nacionales e internacionales. Destaca por su estilo
+        competitivo, su regularidad y su capacidad para rendir al máximo nivel en las
+        grandes competiciones. Sus partidos se disputan en el WiZink Center, uno de los
+        pabellones más emblemáticos de Madrid.
+    </string>
+
+
+<string name="maraton">Maratón de Madrid</string>
+<string name="descripcion_maraton">
+        La Maratón de Madrid es una de las pruebas de atletismo más importantes de España
+        y se celebra cada año por las principales calles de la ciudad. Reúne a miles de
+        corredores nacionales e internacionales, combinando deporte, esfuerzo y un
+        recorrido exigente que atraviesa lugares emblemáticos de Madrid. Es un evento
+        que refleja el espíritu deportivo y la pasión por el running en la capital.
+    </string>
+
+<string name="san_silvestre">San Silvestre Vallecana</string>
+<string name="descripcion_sansil">
+        La San Silvestre Vallecana es una de las carreras populares más conocidas del mundo
+        y se celebra cada 31 de diciembre en Madrid. Destaca por su ambiente festivo, su
+        carácter popular y la gran participación de corredores de todos los niveles.
+        Más allá de la competición, se ha convertido en una tradición que despide el año
+        uniendo deporte, ciudad y celebración.
+    </string>
+
+
+<string name="mutua">Mutua Madrid Open</string>
+<string name="descripcion_mutua">
+        El Mutua Madrid Open es uno de los torneos de tenis más importantes del calendario
+        internacional y se celebra cada año en la Caja Mágica de Madrid. Reúne a los mejores
+        jugadores y jugadoras del mundo, formando parte de los circuitos ATP y WTA. Este
+        evento sitúa a Madrid como una referencia deportiva global y atrae a miles de
+        aficionados al tenis.
+    </string>
+
 </resources>
