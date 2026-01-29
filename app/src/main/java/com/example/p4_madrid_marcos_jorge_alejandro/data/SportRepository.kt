@@ -39,7 +39,7 @@ class SportRepository {
                 categoria = Categoria.ATLETISMO,
                 nameRes = R.string.maraton,
                 descriptionRes = R.string.descripcion_maraton,
-                imgRes = R.drawable.maratonMadrid
+                imgRes = R.drawable.maratonmadrid
             ),
             Sport(
                 categoria = Categoria.ATLETISMO,
