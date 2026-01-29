@@ -11,7 +11,6 @@ data class ShopingCenterUiState(
     val shopingCenters: List<ShopingCenter> = emptyList()
 
 
-
 )
 
 class ShopingCenterViewModel{
