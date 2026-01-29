@@ -42,7 +42,7 @@ import com.example.p4_madrid_marcos_jorge_alejandro.model.ShopingCenter
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.Shapes
 
 @Composable
-fun ShopingCenterView(viewModel: ShopingCenterViewModel = viewModel()) {
+fun ShopingCenterView(viewModel: ShopingCenterViewModel = viewModel(factory = ShopingCenterViewModel.Factory)) {
     val uiState by viewModel.uiState.collectAsState()
 
     ShopingCenterContent(
@@ -162,7 +162,7 @@ fun TitleCategory(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
+@Preview(showBackground = true, )
 @Composable
 fun ShopingCenterPreview(){
     P4_Madrid_Marcos_Jorge_AlejandroTheme {
