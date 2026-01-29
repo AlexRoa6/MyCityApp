@@ -6,4 +6,5 @@ import androidx.annotation.StringRes
 class ShopingCenter(
     nameRes: Int,
     imgRes: Int,
-    descriptionRes: Int): Site(nameRes, imgRes, descriptionRes)
+    descriptionRes: Int,
+    isExpanded: Boolean): Site(nameRes, imgRes, descriptionRes, isExpanded)

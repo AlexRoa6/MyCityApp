@@ -16,9 +16,5 @@ class ShopingCenterViewModel{
     private val _uiSate = MutableStateFlow(ShopingCenterUiState())
     val uiState: StateFlow<ShopingCenterUiState> =_uiSate.asStateFlow()
 
-    fun onExpandedChange(expanded: Boolean){
-        _uiSate.update {
-            it.copy()
-        }
-    }
+
 }
