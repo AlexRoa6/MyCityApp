@@ -7,4 +7,4 @@ class ShopingCenter(
     nameRes: Int,
     imgRes: Int,
     descriptionRes: Int,
-    isExpanded: Boolean): Site(nameRes, imgRes, descriptionRes, isExpanded)
+    isExpanded: Boolean=false): Site(nameRes, imgRes, descriptionRes, isExpanded)
