@@ -62,4 +62,45 @@
         aficionados al tenis.
     </string>
 
+        <string name="gran_plaza">Gran Plaza 2</string>
+        <string name="gran_plaza_desc">Centro comercial en Majadahonda con más de 100 tiendas</string>
+
+        <string name="la_vaguada">La Vaguada</string>
+        <string name="la_vaguada_desc">Centro comercial en Barrio del Pilar, uno de los más antiguos de Madrid</string>
+
+        <string name="xanadu">Xanadú</string>
+        <string name="xanadu_desc">Centro comercial y de ocio en Arroyomolinos con pista de esquí indoor</string>
+
+        <string name="el_corte_ingles">El Corte Inglés</string>
+        <string name="el_corte_ingles_desc">Grandes almacenes con múltiples sedes en Madrid</string>
+
+        <string name="parquesur">Parquesur</string>
+        <string name="parquesur_desc">Centro comercial en Leganés, uno de los más grandes de España</string>
+
+        <string name="plenilunio">Plenilunio</string>
+        <string name="plenilunio_desc">Centro comercial en San Blas con amplia oferta de ocio</string>
+
+        <string name="la_gavia">La Gavia</string>
+        <string name="la_gavia_desc">Centro comercial en Vallecas con diseño moderno</string>
+
+        <string name="plaza_norte">Plaza Norte 2</string>
+        <string name="plaza_norte_desc">Centro comercial en San Sebastián de los Reyes</string>
+
+        <string name="tres_aguas">Tres Aguas</string>
+        <string name="tres_aguas_desc">Centro comercial en Alcorcón junto al parque de ocio</string>
+
+        <string name="islazul">Islazul</string>
+        <string name="islazul_desc">Centro comercial en Carabanchel con más de 170 tiendas</string>
+
+        <string name="plaza_rio">Plaza Río 2</string>
+        <string name="plaza_rio_desc">Centro comercial junto a Madrid Río con terraza al aire libre</string>
+
+        <string name="abc_serrano">ABC Serrano</string>
+        <string name="abc_serrano_desc">Centro comercial de lujo en pleno barrio de Salamanca</string>
+
+        <string name="el_jardin_serrano">El Jardín de Serrano</string>
+        <string name="el_jardin_serrano_desc">Galería comercial exclusiva en la calle Goya</string>
+
+        <string name="sexta_avenida">Sexta Avenida</string>
+        <string name="sexta_avenida_desc">Centro comercial en Pozuelo de Alarcón</string>
 </resources>
