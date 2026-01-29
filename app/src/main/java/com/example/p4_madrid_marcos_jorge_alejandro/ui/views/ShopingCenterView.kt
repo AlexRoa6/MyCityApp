@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -71,17 +73,16 @@ fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (Shop
             }
         }
     ) {
-        Scaffold(modifier = Modifier.fillMaxSize()) { paddingValues ->
-            Column {
+        Scaffold(
+            modifier = Modifier.fillMaxSize(),
+            topBar = { TopBar() }
+        ) { paddingValues ->
+
+            Column (Modifier.padding(paddingValues)){
                 TitleCategory()
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(minSize = (150.dp)),
-                    contentPadding = PaddingValues(
-                        bottom = paddingValues.calculateBottomPadding() + 16.dp,
-                        start = 16.dp,
-                        end = 16.dp,
-                        top = paddingValues.calculateTopPadding()
-                    )
+                    contentPadding = PaddingValues(end = 4.dp, start = 4.dp)
                 ) {
 
 
@@ -92,6 +93,22 @@ fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (Shop
             }
         }
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun TopBar() {
+    CenterAlignedTopAppBar(
+        title = { Text(text = stringResource(R.string.centros_comerciales_topBar)) },
+        navigationIcon = {
+            Icon(
+                painter = painterResource(R.drawable.outline_arrow_back_ios_24),
+                contentDescription = null,
+                modifier = Modifier.padding(start = 16.dp)
+            )
+        },
+
+    )
 }
 
 @Composable
@@ -132,7 +149,7 @@ fun ShopingCenterImage(shopingCenter: ShopingCenter, modifier: Modifier = Modifi
 
 @Composable
 fun TitleCategory(modifier: Modifier = Modifier) {
-    Column (Modifier.padding(start = 28.dp, end = 28.dp, top = 28.dp)){
+    Column (Modifier.padding(start = 20.dp, end = 20.dp, top = 8.dp)){
         Text(
             text = stringResource(R.string.title_centros_comerciales),
             color = MaterialTheme.colorScheme.tertiary
