@@ -1,9 +1,13 @@
 import com.example.p4_madrid_marcos_jorge_alejandro.R
 import com.example.p4_madrid_marcos_jorge_alejandro.model.Categoria
 import com.example.p4_madrid_marcos_jorge_alejandro.model.Sport
+import com.example.p4_madrid_marcos_jorge_alejandro.viewModels.deportesUiState
 
 class SportRepository {
 
+    fun onClickCard(deporte: Sport){
+        deporte.isExpanded = !deporte.isExpanded
+    }
     fun getSports(): List<Sport> {
         return listOf(
 
@@ -13,6 +17,7 @@ class SportRepository {
                 nameRes = R.string.Titulo_realmadrid,
                 descriptionRes = R.string.descripcion_realmadrid,
                 imgRes = R.drawable.brenabeu
+
             ),
             Sport(
                 categoria = Categoria.FUTBOL,
