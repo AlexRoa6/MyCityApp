@@ -1,28 +1,32 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.ui.views
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.material3.Button
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
+import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -50,11 +54,18 @@ fun ShopingCenterView(viewModel: ShopingCenterViewModel = viewModel(factory = Sh
 
     ShopingCenterContent(
         shopingCenters = uiState.shopingCenters,
-        onClickCard = { viewModel.onClickCard(it) }
+        onClickCard = { viewModel.onClickCard(it) },
+        uiState.shopingCenterSelected,
+        onDismissModal = {viewModel.onDismissModal()}
     )
 }
 @Composable
-fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (ShopingCenter) -> Unit){
+fun ShopingCenterContent(
+    shopingCenters: List<ShopingCenter>,
+    onClickCard: (ShopingCenter) -> Unit,
+    selectedShopingCenter: ShopingCenter?,
+    onDismissModal: () -> Unit
+){
 
     var currentDestination by rememberSaveable { mutableStateOf(AppDestination.HOME) }
 
@@ -81,6 +92,9 @@ fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (Shop
             topBar = { TopBar() }
         ) { paddingValues ->
 
+            if (selectedShopingCenter != null) {
+                ModalInfo(onDismissModal = onDismissModal, shopingCenter = selectedShopingCenter)
+            }
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(minSize = (150.dp)),
                     contentPadding = PaddingValues(
@@ -120,24 +134,24 @@ fun TopBar() {
 }
 
 @Composable
-fun ShopingCard(shopingCenter: ShopingCenter, onClickCard: () -> Unit, modifier: Modifier = Modifier) {
+fun ShopingCard(shopingCenter: ShopingCenter, onClickCard: (ShopingCenter) -> Unit, modifier: Modifier = Modifier) {
     Column(Modifier
         .fillMaxWidth(0.5f)
-        .padding(12.dp),
+        .padding(12.dp)
+        .clickable(onClick = { onClickCard(shopingCenter) }),
         horizontalAlignment = Alignment.CenterHorizontally){
         ShopingCenterImage(shopingCenter)
         Spacer(Modifier.height(8.dp))
         ShopingCenterTitle(shopingCenter)
     }
-
-
 }
 
 @Composable
 fun ShopingCenterTitle(shopingCenter: ShopingCenter) {
     Text(
         text = stringResource(shopingCenter.nameRes),
-        color = MaterialTheme.colorScheme.tertiary
+        color = MaterialTheme.colorScheme.tertiary,
+        style = MaterialTheme.typography.titleSmall
     )
 }
 
@@ -161,54 +175,108 @@ fun TitleCategory(modifier: Modifier = Modifier) {
         Text(
             text = stringResource(R.string.title_centros_comerciales),
             color = MaterialTheme.colorScheme.tertiary,
-            style = MaterialTheme.typography.titleSmall
+            style = MaterialTheme.typography.titleMedium
         )
         Spacer(Modifier.height(8.dp))
         Text(
             text = stringResource(R.string.centros_comerciales_description),
-            color = MaterialTheme.colorScheme.secondary
+            color = MaterialTheme.colorScheme.secondary,
+            style = MaterialTheme.typography.bodyLarge
         )
     }
+}
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ModalInfo(onDismissModal: () -> Unit, shopingCenter: ShopingCenter){
+    val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+    ModalBottomSheet(
+        {onDismissModal()},
+        sheetState =  sheetState
+    ) {
+        Column (){
+            Image(
+                painter = painterResource(shopingCenter.imgRes),
+                contentDescription = null,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(0.5f)
+                    .clip(Shapes.extraLarge),
+                contentScale = ContentScale.Crop,
+
+            )
+            Spacer(Modifier.height(32.dp))
+            Text(
+                text = stringResource(shopingCenter.nameRes),
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.padding(top = 12.dp, start = 16.dp)
+            )
+            Text(
+                text = stringResource(shopingCenter.descriptionRes),
+                modifier = Modifier.padding(start = 16.dp, bottom = 32.dp)
+            )
+
+            Button({}, Modifier
+                .fillMaxWidth()
+                .padding(end = 16.dp, start = 16.dp, bottom = 28.dp)) {
+                Text(
+                    text = "Ver Ubicacion"
+                )
+            }
+
+        }
+    }
+
 }
 
-@Preview(showBackground = true, )
+@Preview
 @Composable
-fun ShopingCenterPreview(){
+fun ModalPreview(){
     P4_Madrid_Marcos_Jorge_AlejandroTheme {
-        ShopingCenterContent(
-            shopingCenters = listOf(
-                ShopingCenter(
-                    nameRes = R.string.gran_plaza,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.gran_plaza_desc
-                ),
-                ShopingCenter(
-                    nameRes = R.string.la_vaguada,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.la_vaguada_desc
-                ),
-                ShopingCenter(
-                    nameRes = R.string.gran_plaza,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.gran_plaza_desc
-                ),
-                ShopingCenter(
-                    nameRes = R.string.la_vaguada,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.la_vaguada_desc
-                ),
-                ShopingCenter(
-                    nameRes = R.string.gran_plaza,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.gran_plaza_desc
-                ),
-                ShopingCenter(
-                    nameRes = R.string.la_vaguada,
-                    imgRes = R.drawable.granplaza2,
-                    descriptionRes = R.string.la_vaguada_desc
-                )
-            ),
-            onClickCard = {}
-        )
+        ModalInfo({}, ShopingCenter(
+            nameRes = R.string.plaza_norte,
+            imgRes = R.drawable.granplaza2,
+            descriptionRes = R.string.plaza_norte_desc
+        ))
     }
 }
+//@Preview(showBackground = true, )
+//@Composable
+//fun ShopingCenterPreview(){
+//    P4_Madrid_Marcos_Jorge_AlejandroTheme {
+//        ShopingCenterContent(
+//            shopingCenters = listOf(
+//                ShopingCenter(
+//                    nameRes = R.string.gran_plaza,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.gran_plaza_desc
+//                ),
+//                ShopingCenter(
+//                    nameRes = R.string.la_vaguada,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.la_vaguada_desc
+//                ),
+//                ShopingCenter(
+//                    nameRes = R.string.gran_plaza,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.gran_plaza_desc
+//                ),
+//                ShopingCenter(
+//                    nameRes = R.string.la_vaguada,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.la_vaguada_desc
+//                ),
+//                ShopingCenter(
+//                    nameRes = R.string.gran_plaza,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.gran_plaza_desc
+//                ),
+//                ShopingCenter(
+//                    nameRes = R.string.la_vaguada,
+//                    imgRes = R.drawable.granplaza2,
+//                    descriptionRes = R.string.la_vaguada_desc
+//                )
+//            ),
+//            onClickCard = {}
+//        )
+//    }
+//}

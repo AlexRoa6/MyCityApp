@@ -25,11 +25,7 @@ class ocioViewModel(private val repository: OcioRepository): ViewModel(){
         getOcio()
     }
 
-    fun onClickCard(ocio: Ocio){
-        viewModelScope.launch {
-            repository.onClickCard(ocio)
-        }
-    }
+
 
     fun getOcio(){
         viewModelScope.launch {

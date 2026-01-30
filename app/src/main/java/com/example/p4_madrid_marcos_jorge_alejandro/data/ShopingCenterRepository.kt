@@ -78,9 +78,6 @@ class ShopingCenterRepository {
             descriptionRes = R.string.sexta_avenida_desc
         )
     )
-    fun onCLickCard(shopingCenter: ShopingCenter){
-        shopingCenter.isExpanded = !shopingCenter.isExpanded
-    }
 
     fun getShopingCenters(): List<ShopingCenter>{
         return _listShopingCenters

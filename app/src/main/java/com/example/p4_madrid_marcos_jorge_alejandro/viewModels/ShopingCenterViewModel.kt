@@ -16,7 +16,8 @@ import kotlinx.coroutines.launch
 
 
 data class ShopingCenterUiState(
-    val shopingCenters: List<ShopingCenter> = emptyList()
+    val shopingCenters: List<ShopingCenter> = emptyList(),
+    val shopingCenterSelected: ShopingCenter? = null
 )
 
 class ShopingCenterViewModel(private val repository: ShopingCenterRepository): ViewModel(){
@@ -31,13 +32,19 @@ class ShopingCenterViewModel(private val repository: ShopingCenterRepository): V
 
     fun onClickCard(shopingCenter: ShopingCenter){
         viewModelScope.launch {
-            repository.onCLickCard(shopingCenter)
+            _uiSate.update { it.copy(shopingCenterSelected = shopingCenter) }
         }
     }
 
     fun getShopingCenters(){
         viewModelScope.launch {
             _uiSate.update { it.copy(repository.getShopingCenters()) }
+        }
+    }
+
+    fun onDismissModal(){
+        viewModelScope.launch {
+            _uiSate.update { it.copy(shopingCenterSelected = null) }
         }
     }
 

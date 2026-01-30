@@ -54,12 +54,7 @@ fun SportsView(
             verticalArrangement = Arrangement.spacedBy(16.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            itemsIndexed(uiState.deportesList) { _, sport ->
-                SportCard(
-                    sport = sport,
-                    onClick = { viewModel.onClickCard(sport) }
-                )
-            }
+
         }
     }
 }
@@ -72,7 +67,6 @@ fun SportCard(
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(if (sport.isExpanded) 260.dp else 180.dp)
             .clickable { onClick() },
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(8.dp)
@@ -113,14 +107,7 @@ fun SportCard(
                     color = Color.White
                 )
 
-                if (sport.isExpanded) {
-                    Spacer(modifier = Modifier.height(6.dp))
-                    Text(
-                        text = stringResource(id = sport.descriptionRes),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = Color.White
-                    )
-                }
+
             }
         }
     }
