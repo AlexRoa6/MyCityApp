@@ -160,7 +160,8 @@ fun TitleCategory(modifier: Modifier = Modifier) {
     Column (Modifier.padding(start = 20.dp, end = 20.dp, top = 8.dp)){
         Text(
             text = stringResource(R.string.title_centros_comerciales),
-            color = MaterialTheme.colorScheme.tertiary
+            color = MaterialTheme.colorScheme.tertiary,
+            style = MaterialTheme.typography.titleSmall
         )
         Spacer(Modifier.height(8.dp))
         Text(
