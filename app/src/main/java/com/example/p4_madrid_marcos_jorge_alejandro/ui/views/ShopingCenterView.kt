@@ -10,7 +10,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -19,6 +21,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -78,22 +81,26 @@ fun ShopingCenterContent(shopingCenters: List<ShopingCenter>, onClickCard: (Shop
             topBar = { TopBar() }
         ) { paddingValues ->
 
-            Column (Modifier.padding(paddingValues)){
-                TitleCategory()
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(minSize = (150.dp)),
-                    contentPadding = PaddingValues(end = 4.dp, start = 4.dp)
-                ) {
+                    contentPadding = PaddingValues(
+                        start = 4.dp,
+                        end = 4.dp,
+                        top = paddingValues.calculateTopPadding(),
+                        bottom = paddingValues.calculateBottomPadding()
+                    )
+                ){
 
-
+                    item (span = { GridItemSpan(maxLineSpan) }){ TitleCategory() }
                     items(shopingCenters) { shopingCenter ->
                         ShopingCard(shopingCenter, { onClickCard(shopingCenter) })
                     }
                 }
+
             }
         }
-    }
 }
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -107,6 +114,7 @@ fun TopBar() {
                 modifier = Modifier.padding(start = 16.dp)
             )
         },
+        colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background)
 
     )
 }
