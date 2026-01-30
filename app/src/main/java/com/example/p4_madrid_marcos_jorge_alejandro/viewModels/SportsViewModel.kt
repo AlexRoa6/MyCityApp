@@ -25,11 +25,7 @@ class deportesViewModel(private val repository: SportRepository): ViewModel(){
         getdeportes()
     }
 
-    fun onClickCard(deportes: Sport){
-        viewModelScope.launch {
-            repository.onClickCard(deportes)
-        }
-    }
+
 
     fun getdeportes(){
         viewModelScope.launch {

@@ -5,9 +5,6 @@ import com.example.p4_madrid_marcos_jorge_alejandro.viewModels.deportesUiState
 
 class SportRepository {
 
-    fun onClickCard(deporte: Sport){
-        deporte.isExpanded = !deporte.isExpanded
-    }
     fun getSports(): List<Sport> {
         return listOf(
 

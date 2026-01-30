@@ -20,7 +20,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = PrimaryLight,
+    primary = PrimaryDark,
     secondary = SecundarioLight,
     background = BackgroundLight,
     onBackground = CardBackgroundLight,
