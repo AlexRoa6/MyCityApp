@@ -12,7 +12,8 @@ enum class AppDestination (
     val icon: Int,
 ) {
 
-    FAVORITES("Favorites", R.drawable.baseline_shopping_bag_24),
-    HOME("Home", R.drawable.sharp_sports_basketball_24),
-    PROFILE("Profile", R.drawable.baseline_park_24),
+    HOME("Inicio", R.drawable.round_home_24),
+    SHOPING_CENTER("Tiendas", R.drawable.baseline_shopping_bag_24),
+    SPORTS("Deportes", R.drawable.sharp_sports_basketball_24),
+    OCIO("Ocio", R.drawable.baseline_park_24),
 }
