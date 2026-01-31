@@ -8,10 +8,6 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.p4_madrid_marcos_jorge_alejandro.model.Site
@@ -25,14 +21,20 @@ fun <T : Site> GenericScreenContent(
     onDismissModal: () -> Unit,
     titleRes: Int,
     descriptionRes: Int,
-    topBarTitleRes: Int
+    topBarTitleRes: Int,
+    onBackButtonClicked: () -> Unit,
+    currentDestination: AppDestination,
+    onClickNavigation: (AppDestination) -> Unit
 ) {
-    var currentDestination by rememberSaveable { mutableStateOf(AppDestination.HOME) }
-
     Scaffold(
         modifier = Modifier.fillMaxSize(),
-        topBar = { TopBar(topBarTitleRes) },
-        bottomBar = { CustomBottomBar(currentDestination) { currentDestination = it } }
+        topBar = { TopBar(topBarTitleRes, onBackButtonClicked) },
+        bottomBar = {
+            CustomBottomBar(
+                currentDestination = currentDestination,
+                onDestinationSelected = { destination -> onClickNavigation(destination) }
+            )}
+
     ) { paddingValues ->
 
         if (selectedItem != null) {
