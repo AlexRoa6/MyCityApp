@@ -1,31 +1,30 @@
-
 <resources>
 
-<string name="app_name">P4_Madrid_Marcos_Jorge_Alejandro</string>
+    <string name="app_name">P4_Madrid_Marcos_Jorge_Alejandro</string>
 
-<string name="futbol">Fútbol</string>
-<string name="basket">Baloncesto</string>
-<string name="atletismo">Atletismo / Running</string>
-<string name="tenis">Tenis</string>
+    <string name="futbol">Fútbol</string>
+    <string name="basket">Baloncesto</string>
+    <string name="atletismo">Atletismo / Running</string>
+    <string name="tenis">Tenis</string>
 
-<string name="Titulo_realmadrid">Real Madrid</string>
-<string name="descripcion_realmadrid">
+    <string name="Titulo_realmadrid">Real Madrid</string>
+    <string name="descripcion_realmadrid">
         El estadio Santiago Bernabéu es conocido en todo el mundo por sus noches mágicas,
         especialmente en las competiciones europeas. A lo largo de la historia, el Real Madrid
         ha protagonizado remontadas y partidos inolvidables que han convertido su estadio
         en un lugar mítico del fútbol.
     </string>
 
-<string name="titulo_atletico">Atlético de Madrid</string>
-<string name="descripcion_atleti">
+    <string name="titulo_atletico">Atlético de Madrid</string>
+    <string name="descripcion_atleti">
         El estadio Riyadh Air Metropolitano representa el carácter del Atlético de Madrid:
         esfuerzo, resistencia y unión con su afición. En los grandes partidos, el estadio
         se transforma en un fortín donde cada balón se pelea y cada acción se vive con
         máxima intensidad.
     </string>
 
-<string name="titulo_baloncesto">Real Madrid Baloncesto</string>
-<string name="descripcion_baloncesto">
+    <string name="titulo_baloncesto">Real Madrid Baloncesto</string>
+    <string name="descripcion_baloncesto">
         El Real Madrid Baloncesto es uno de los clubes más importantes de Europa, con una
         larga trayectoria de éxitos nacionales e internacionales. Destaca por su estilo
         competitivo, su regularidad y su capacidad para rendir al máximo nivel en las
@@ -34,8 +33,8 @@
     </string>
 
 
-<string name="maraton">Maratón de Madrid</string>
-<string name="descripcion_maraton">
+    <string name="maraton">Maratón de Madrid</string>
+    <string name="descripcion_maraton">
         La Maratón de Madrid es una de las pruebas de atletismo más importantes de España
         y se celebra cada año por las principales calles de la ciudad. Reúne a miles de
         corredores nacionales e internacionales, combinando deporte, esfuerzo y un
@@ -43,8 +42,8 @@
         que refleja el espíritu deportivo y la pasión por el running en la capital.
     </string>
 
-<string name="san_silvestre">San Silvestre Vallecana</string>
-<string name="descripcion_sansil">
+    <string name="san_silvestre">San Silvestre Vallecana</string>
+    <string name="descripcion_sansil">
         La San Silvestre Vallecana es una de las carreras populares más conocidas del mundo
         y se celebra cada 31 de diciembre en Madrid. Destaca por su ambiente festivo, su
         carácter popular y la gran participación de corredores de todos los niveles.
@@ -53,8 +52,8 @@
     </string>
 
 
-<string name="mutua">Mutua Madrid Open</string>
-<string name="descripcion_mutua">
+    <string name="mutua">Mutua Madrid Open</string>
+    <string name="descripcion_mutua">
         El Mutua Madrid Open es uno de los torneos de tenis más importantes del calendario
         internacional y se celebra cada año en la Caja Mágica de Madrid. Reúne a los mejores
         jugadores y jugadoras del mundo, formando parte de los circuitos ATP y WTA. Este
@@ -62,59 +61,60 @@
         aficionados al tenis.
     </string>
 
-        <string name="parqueAtracc">Parque de atracciones de Madrid</string>
-        <string name="desc_Parque"> El Parque de Atracciones de Madrid, con sus atracciones únicas para los más mayores
+    <string name="parqueAtracc">Parque de atracciones de Madrid</string>
+    <string name="desc_Parque"> El Parque de Atracciones de Madrid, con sus atracciones únicas para los más mayores
         y con atracciones únicas con temáticas Nickelodeon para los más pequeños.</string>
 
-<string name="warner"> Parque Warner Madrid</string>
-<string name="desc_Warner"> El Parque Warner de Madrid es uno de los mejores de toda Europa.
+    <string name="warner"> Parque Warner Madrid</string>
+    <string name="desc_Warner"> El Parque Warner de Madrid es uno de los mejores de toda Europa.
         Desde atracciones inimaginables de la mano de superman, hasta los espectaculos más increibles
         para los mas peques de la casa de la mano de bob esponja y patricio </string>
 
-        <string name="faunia"> Faunia Madrid</string>
-        <string name="desc_Faunia"></string>
-        <string name="gran_plaza">Gran Plaza 2</string>
-        <string name="gran_plaza_desc">Centro comercial en Majadahonda con más de 100 tiendas</string>
+    <!-- CENTROS COMERCIALES DE MADRID -->
 
-        <string name="la_vaguada">La Vaguada</string>
-        <string name="la_vaguada_desc">Centro comercial en Barrio del Pilar, uno de los más antiguos de Madrid</string>
+    <string name="gran_plaza">Gran Plaza 2</string>
+    <string name="gran_plaza_desc">Moderno centro comercial inaugurado en 2012 en Majadahonda, con casi 80.000 m² de superficie y 190 locales comerciales. Cuenta con un hipermercado Alcampo, Apple Store, FNAC y las principales marcas de moda. Dispone de 3.680 plazas de aparcamiento gratuito y amplios jardines exteriores que lo convierten en un espacio agradable para pasar el día en familia.</string>
 
-        <string name="xanadu">Xanadú</string>
-        <string name="xanadu_desc">Centro comercial y de ocio en Arroyomolinos con pista de esquí indoor</string>
+    <string name="la_vaguada">La Vaguada</string>
+    <string name="la_vaguada_desc">Primer centro comercial de España, inaugurado en 1983 en el barrio del Pilar. Diseñado por el artista César Manrique, destaca por su arquitectura única con jardineras colgantes y sus emblemáticas velas decorativas. Con 85.000 m² repartidos en 3 plantas comerciales, alberga más de 200 tiendas, mercado tradicional, cines y una amplia terraza. Recibe más de 25 millones de visitantes al año.</string>
 
-        <string name="el_corte_ingles">El Corte Inglés</string>
-        <string name="el_corte_ingles_desc">Grandes almacenes con múltiples sedes en Madrid</string>
+    <string name="xanadu">Xanadú</string>
+    <string name="xanadu_desc">Espectacular centro comercial y de ocio en Arroyomolinos que alberga Madrid SnowZone, la única pista de esquí cubierta de España y una de las más grandes del mundo con 18.000 m² de nieve real. Además de esquí y snowboard durante todo el año, ofrece más de 220 tiendas, cines, karting, minigolf y una completa zona de restauración. Un destino único que combina compras y deportes de invierno a solo 15 minutos de Madrid.</string>
 
-        <string name="parquesur">Parquesur</string>
-        <string name="parquesur_desc">Centro comercial en Leganés, uno de los más grandes de España</string>
+    <string name="parquesur">Westfield Parquesur</string>
+    <string name="parquesur_desc">Uno de los centros comerciales más grandes y emblemáticos de España, inaugurado en 1989 en Leganés. Destaca por su espectacular fuente cibernética con shows de agua, luz y sonido, única en Europa. Con más de 200 tiendas, cines IMAX, bolera, hotel y amplias terrazas junto al lago artificial, ofrece una experiencia completa de compras y ocio para toda la familia.</string>
 
-        <string name="plenilunio">Plenilunio</string>
-        <string name="plenilunio_desc">Centro comercial en San Blas con amplia oferta de ocio</string>
+    <string name="plenilunio">Plenilunio</string>
+    <string name="plenilunio_desc">Centro comercial inaugurado en 2006 en el distrito de San Blas-Canillejas, muy cerca del estadio Metropolitano del Atlético de Madrid. Cuenta con más de 180 locales de moda, servicios y restauración, incluyendo uno de los Primark más grandes de España. Ofrece cine con 13 salas, bolera, parque de aventuras Vertical Park con tirolina y rocódromo, y un completo centro wellness con spa y gimnasio.</string>
 
-        <string name="la_gavia">La Gavia</string>
-        <string name="la_gavia_desc">Centro comercial en Vallecas con diseño moderno</string>
+    <string name="la_gavia">La Gavia</string>
+    <string name="la_gavia_desc">El centro comercial más grande de Madrid capital, con 110.000 m² comerciales situados en el Ensanche de Vallecas. Su innovador diseño en forma de abanico facilita el recorrido por sus más de 170 tiendas distribuidas en una sola planta. Incluye IKEA, Carrefour, FNAC, zona de restauración con 30 locales, cines con 10 salas y 5.000 plazas de parking gratuito. Conectado directamente por metro desde Puerta del Sol.</string>
 
-        <string name="plaza_norte">Plaza Norte 2</string>
-        <string name="plaza_norte_desc">Centro comercial en San Sebastián de los Reyes</string>
+    <string name="plaza_norte">Plaza Norte 2</string>
+    <string name="plaza_norte_desc">Conocido como \"La Cúpula de Madrid\" por su impresionante cúpula de cristal de 35 metros de altura. Inaugurado en 2004 en San Sebastián de los Reyes, destaca por su lujosa decoración de estilo veneciano con lámparas de cristal, suelos de mármol y obeliscos de lapislázuli y malaquita. Alberga más de 200 tiendas de moda nacional e internacional, 25 restaurantes y 14 salas de cine.</string>
 
-        <string name="tres_aguas">Tres Aguas</string>
-        <string name="tres_aguas_desc">Centro comercial en Alcorcón junto al parque de ocio</string>
+    <string name="tres_aguas">Tres Aguas</string>
+    <string name="tres_aguas_desc">Centro comercial ubicado en Alcorcón junto al parque de ocio, con una amplia oferta de tiendas de moda, hogar y tecnología. Cuenta con hipermercado, zona de restauración variada y cines. Su diseño moderno y luminoso, junto con su fácil acceso desde la M-40 y M-50, lo convierten en un destino de compras cómodo para los habitantes del suroeste de Madrid.</string>
 
-        <string name="islazul">Islazul</string>
-        <string name="islazul_desc">Centro comercial en Carabanchel con más de 170 tiendas</string>
+    <string name="islazul">Islazul</string>
+    <string name="islazul_desc">Innovador centro comercial en Carabanchel que fue pionero en España al incorporar una cubierta transparente de ETFE que inunda el interior de luz natural. Con más de 180 tiendas distribuidas en 3 plantas, ofrece un concepto de \"isla urbana\" con jardines interiores y microclima propio. Incluye cines, bolera, amplia zona de restauración y 4.100 plazas de aparcamiento gratuito.</string>
 
-        <string name="plaza_rio">Plaza Río 2</string>
-        <string name="plaza_rio_desc">Centro comercial junto a Madrid Río con terraza al aire libre</string>
+    <string name="plaza_rio">Plaza Río 2</string>
+    <string name="plaza_rio_desc">Moderno centro comercial inaugurado en 2017 frente al centro cultural Matadero Madrid, a orillas del río Manzanares. Su principal atractivo es \"El Mirador\", una terraza de 3.000 m² con espectaculares vistas panorámicas de Madrid Río y el skyline de la ciudad. Con más de 150 tiendas, zona de juegos infantiles Wow con toboganes y puentes colgantes, y parking gratuito las primeras 2 horas.</string>
 
-        <string name="abc_serrano">ABC Serrano</string>
-        <string name="abc_serrano_desc">Centro comercial de lujo en pleno barrio de Salamanca</string>
+    <string name="abc_serrano">ABC Serrano</string>
+    <string name="abc_serrano_desc">Elegante centro comercial ubicado en el exclusivo barrio de Salamanca, instalado en la histórica sede del diario ABC construida en 1899 en estilo neoplateresco. Combina la tradición de su arquitectura exterior con un diseño interior vanguardista de 14.000 m² inundados de luz natural. Ofrece 50 locales con moda selecta, restaurantes de autor en su terraza con vistas, el Sweet Space Museum y servicios premium como sastrería y aparcamiento 24 horas.</string>
 
-        <string name="el_jardin_serrano">El Jardín de Serrano</string>
-        <string name="el_jardin_serrano_desc">Galería comercial exclusiva en la calle Goya</string>
+    <string name="sexta_avenida">Sexta Avenida</string>
+    <string name="sexta_avenida_desc">Centro comercial familiar ubicado en Pozuelo de Alarcón, una de las zonas residenciales más exclusivas del oeste de Madrid. Ofrece una selección de tiendas de moda, supermercado, restaurantes y servicios pensados para las familias de la zona. Su ambiente tranquilo y su fácil acceso lo convierten en el punto de referencia comercial del municipio pozueleño.</string>
+s
+    <string name="el_corte_ingles">El Corte Inglés</string>
+    <string name="el_corte_ingles_desc">Los emblemáticos grandes almacenes españoles cuentan con múltiples sedes en Madrid, destacando los de Castellana, Preciados, Serrano y Goya. Ofrecen una experiencia de compra integral con moda de primeras marcas, electrónica, hogar, supermercado gourmet, restaurantes y servicios exclusivos. Su icónico triángulo verde es símbolo del comercio español desde 1940.</string>
 
-        <string name="sexta_avenida">Sexta Avenida</string>
-        <string name="sexta_avenida_desc">Centro comercial en Pozuelo de Alarcón</string>
+    <string name="faunia">Faunia Madrid</string>
+    <string name="faunia_desc">Parque temático de la naturaleza único en Europa, ubicado en el distrito de Vicálvaro. Con más de 14 hectáreas recreadas en ecosistemas como la jungla amazónica, los polos o el bosque africano, alberga más de 3.000 animales de 300 especies diferentes. Ofrece experiencias interactivas como nadar con leones marinos, alimentar pingüinos y espectáculos educativos para toda la familia.</string>
     <string name="title_centros_comerciales">Centros Comerciales for you</string>
-        <string name="centros_comerciales_description">Descubre los mejores y mas grandes centros comerciales</string>
+    <string name="centros_comerciales_description">Descubre los mejores centros comerciales</string>
     <string name="centros_comerciales_topBar">Centros Comerciales</string>
+    <string name="ver_ubicacion_buton">Ver Ubicacion</string>
 </resources>
