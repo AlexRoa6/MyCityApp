@@ -117,4 +117,10 @@ s
     <string name="centros_comerciales_description">Descubre los mejores centros comerciales</string>
     <string name="centros_comerciales_topBar">Centros Comerciales</string>
     <string name="ver_ubicacion_buton">Ver Ubicacion</string>
+    <string name="deportes_title">Deportes for you</string>
+    <string name="descripcion_sport">Las mejores actividades y estadios</string>
+    <string name="deportes_title_topbar">Deportes</string>
+    <string name="ocio_title">Otras Actividades for you\n</string>
+    <string name="descripcion_ocio">Los mejores parques, museos, zoos...</string>
+    <string name="ocio_title_topbar">Ocio</string>
 </resources>
