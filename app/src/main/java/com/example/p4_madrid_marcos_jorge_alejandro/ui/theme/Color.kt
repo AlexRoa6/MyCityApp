@@ -12,3 +12,9 @@ val SecundarioLight = Color(0xFF9ca3af)
 val SecundarioDark = Color(0xFF94a3b8)
 val TextColorLight = Color(0xFF1f2937)
 val TextColorDark = Color(0xFFffffff)
+
+val BackgroundDarkDifuminado = Color(0x800B0B0E)
+val BackgroundLightDifuminado = Color(0x803B3939)
+
+val BorderColorDark = Color(0xFF6F6F8B)
+val BorderColorLight = Color(0xFF878790)
