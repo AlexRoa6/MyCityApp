@@ -70,6 +70,30 @@
         Desde atracciones inimaginables de la mano de superman, hasta los espectaculos más increibles
         para los mas peques de la casa de la mano de bob esponja y patricio </string>
 
+    <string name="zoo_madrid">Zoo Aquarium de Madrid</string>
+    <string name="desc_zoo">Parque zoológico y acuario que alberga animales de los cinco continentes, combinando conservación,
+        educación y ocio en un entorno natural dentro de la Casa de Campo.</string>
+
+    <string name="faunia_madrid">Faunia Madrid</string>
+    <string name="desc_faunia">Parque temático de naturaleza en Madrid que combina zoológico y jardín botánico, con ecosistemas de todo el mundo
+        y experiencias educativas sobre la biodiversidad.</string>
+
+    <string name="museo_prado">Museo del Prado</string>
+    <string name="desc_prado">Uno de los museos de arte más importantes del mundo, famoso por su colección
+        de pintura europea, con obras maestras de Velázquez, Goya, El Bosco y Rubens.</string>
+
+    <string name="museo_thyssen">Museo Thyssen-Bornemisza</string>
+    <string name="desc_thyssen">Museo de arte que completa el “Triángulo del Arte” de Madrid, con una amplia colección que recorre 
+        desde el Renacimiento hasta el arte moderno.</string>
+    
+    <string name="museo_geominero">Museo Geominero de Madrid</string>
+    <string name="desc_geomin">Museo científico dedicado a la geología y la paleontología, conocido por su impresionante
+        colección de minerales, fósiles y su histórica sala central.</string>
+
+    <string name="museo_reina_sofia">Museo Reina Sofía</string>
+    <string name="desc_sofia">Museo nacional de arte moderno y contemporáneo de España, reconocido por albergar obras clave del siglo XX y XXI, especialmente el Guernica de Pablo Picasso, junto a creaciones de Dalí,
+        Miró y otros artistas vanguardistas.</string>
+
     <!-- CENTROS COMERCIALES DE MADRID -->
 
     <string name="gran_plaza">Gran Plaza 2</string>
