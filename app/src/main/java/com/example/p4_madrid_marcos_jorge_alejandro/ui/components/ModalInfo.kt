@@ -65,7 +65,8 @@ fun ModalInfo(onDismissModal: () -> Unit, site: Site) {
                     if (layoutResult.hasVisualOverflow) {
                         fontSize = (fontSize.value * 0.9f).sp
                     }
-                }
+                },
+                fontSize = fontSize
             )
             Button(
                 {},
