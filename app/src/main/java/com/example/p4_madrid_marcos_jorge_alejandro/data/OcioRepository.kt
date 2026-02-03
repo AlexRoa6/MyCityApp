@@ -22,7 +22,7 @@ class OcioRepository {
 
             Ocio(
                 nameRes = R.string.faunia_madrid,
-                imgRes = R.drawable.parque_atracciones,
+                imgRes = R.drawable.faunia_madrid,
                 descriptionRes = R.string.desc_faunia
             ),
 
@@ -49,6 +49,48 @@ class OcioRepository {
                 imgRes = R.drawable.reina_sofia,
                 descriptionRes = R.string.desc_sofia
             ),
+
+            Ocio(
+                nameRes = R.string.paintball_madrid,
+                imgRes = R.drawable.paintball,
+                descriptionRes = R.string.paintball_madrid
+            ),
+
+            Ocio(
+                nameRes = R.string.kars_sainz,
+                imgRes = R.drawable.carlos_sainz,
+                descriptionRes = R.string.desc_kars
+            ),
+
+            Ocio(
+                nameRes = R.string.pub_el_tren,
+                imgRes = R.drawable.pub_tren,
+                descriptionRes = R.string.desc_pub
+            ),
+
+            Ocio(
+                nameRes = R.string.laser_tag,
+                imgRes = R.drawable.laser_tag,
+                descriptionRes = R.string.desc_laser
+            ),
+
+            Ocio(
+                nameRes = R.string.tirolinas,
+                imgRes = R.drawable.aventura_amazonia,
+                descriptionRes = R.string.desc_tirolinas
+            ),
+
+            Ocio(
+                nameRes = R.string.retiro,
+                imgRes = R.drawable.retiro_madrid,
+                descriptionRes = R.string.desc_retiro
+            ),
+
+            Ocio(
+                nameRes = R.string.parque_europa,
+                imgRes = R.drawable.parque_europa,
+                descriptionRes = R.string.desc_parque_europa
+            )
         )
     }
 }

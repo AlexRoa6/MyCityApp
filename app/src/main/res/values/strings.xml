@@ -61,6 +61,8 @@
         aficionados al tenis.
     </string>
 
+    <!-- OCIO EN MADRID -->
+
     <string name="parqueAtracc">Parque de atracciones de Madrid</string>
     <string name="desc_Parque"> El Parque de Atracciones de Madrid, con sus atracciones únicas para los más mayores
         y con atracciones únicas con temáticas Nickelodeon para los más pequeños.</string>
@@ -93,6 +95,45 @@
     <string name="museo_reina_sofia">Museo Reina Sofía</string>
     <string name="desc_sofia">Museo nacional de arte moderno y contemporáneo de España, reconocido por albergar obras clave del siglo XX y XXI, especialmente el Guernica de Pablo Picasso, junto a creaciones de Dalí,
         Miró y otros artistas vanguardistas.</string>
+
+    <string name="paintball_madrid">Paintball Madrid Action Live</string>
+    <string name="desc_paint_action">Paintball Madrid Action Live es uno de los centros de paintball más populares y completos de Madrid,
+        ideal para grupos de amigos, familias, despedidas de soltero, cumpleaños y eventos de empresa.
+        Ofrecen una experiencia de ocio activo al aire libre con escenarios diseñados para maximizar la diversión y la estrategia.</string>
+
+    <string name="kars_sainz">Carlos Sainz Karting Las Rozas</string>
+    <string name="desc_kars">Pensado para quienes buscan velocidad, adrenalina y diversión en un entorno moderno y seguro.
+        Cuenta con un circuito técnico de doble altura, con puentes, túneles y curvas peraltadas que ofrecen una experiencia
+        de conducción dinámica y emocionante, apta tanto para principiantes como para pilotos más experimentados. Dispone de karts
+        adaptados para jóvenes y adultos, cronometraje en tiempo real y todas las medidas de seguridad necesarias, lo que lo convierte en un plan ideal para familias,
+        grupos de amigos, celebraciones y eventos de empresa, además de contar con zonas de ocio y servicios que permiten disfrutar de una experiencia completa más allá de la pista.</string>
+
+    <string name="pub_el_tren">Pub El Tren</string>
+    <string name="desc_pub">Una cocteleria cerca del metro de Islas Filipinas. Disfruta de sus numerosos cocteles con tus amigos
+    y acuerdate de preguntar por los juegos de mesa que tienen. Perfecto para una tarde de risas con amigos o la familia.</string>
+
+    <string name="laser_tag">Planet Laser Madrid</string>
+    <string name="desc_laser">Planet Laser te ofrece una Arena de Laser Tag Indoor que te sorprenderá, con una ambientación
+        y un escenario único, con un equipamiento con la última tecnología, te llevaran más allá de los juegos clásicos de Laser tag,
+        tu chaleco tendrá superpoderes, y podrás cambiar de tipo de arma en tu blaster. Te ofrecemos hasta 12 modos de juego, antes de
+        empezar el juego, según el grupo, destreza o experiencia en este tipo de juegos, el Game Master os pondrá el modo más adecuado para cada caso.</string>
+
+    <string name="tirolinas">AVENTURA AMAZONIA CERCEDILLA</string>
+    <string name="desc_tirolinas">Uno de los parques de aventura más grandes de Europa, se encuentra en pleno corazón de la sierra,
+        en el Valle de la Fuenfría de la Sierra de Guadarrarma, el mayor enclave de Ocio en Naturaleza de la Comunidad de Madrid,
+        donde se vive la Aventura en estado puro.Vas a disfrutar de 7 Circuitos de aventura con 114 juegos en los árboles, y 33 tirolinas ,
+        en el mayor parque Multiaventura para adultos y niños de Madrid, incluyendo el nuevo CANOPY, único circuito en Madrid solo de tirolinas con más de 470 m.</string>
+
+    <string name="retiro">Parque de El Retiro</string>
+    <string name="desc_retiro">el pulmón verde más querido de Madrid, un lugar perfecto para desconectar, pasear y disfrutar al aire libre en pleno centro de la ciudad.
+        Con sus amplios jardines, caminos arbolados, estanques y rincones emblemáticos, es ideal tanto para un plan tranquilo como para quedar con amigos,
+        hacer deporte o simplemente sentarse a relajarse. Un sitio con historia, encanto y muy buen rollo, donde siempre apetece volver</string>
+
+    <string name="parque_europa">Parque Europa</string>
+    <string name="desc_parque_europa">espacio único al aire libre que reúne réplicas de algunos de los monumentos más emblemáticos de Europa en un entorno amplio y cuidado.
+        Pasear por el parque es como hacer un pequeño viaje por el continente, con representaciones de lugares tan icónicos como la Torre Eiffel, el Puente de Londres,
+        la Puerta de Brandeburgo o la Fontana di Trevi.</string>
+
 
     <!-- CENTROS COMERCIALES DE MADRID -->
 
