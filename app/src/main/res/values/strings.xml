@@ -176,6 +176,21 @@ s
     <string name="el_corte_ingles">El Corte Inglés</string>
     <string name="el_corte_ingles_desc">Los emblemáticos grandes almacenes españoles cuentan con múltiples sedes en Madrid, destacando los de Castellana, Preciados, Serrano y Goya. Ofrecen una experiencia de compra integral con moda de primeras marcas, electrónica, hogar, supermercado gourmet, restaurantes y servicios exclusivos. Su icónico triángulo verde es símbolo del comercio español desde 1940.</string>
 
+    <!-- Direcciones centros comerciales -->
+    <string name="direccion_gran_plaza">Centro Comercial Gran Plaza 2, Majadahonda, Madrid</string>
+    <string name="direccion_la_vaguada">Centro Comercial La Vaguada, Madrid</string>
+    <string name="direccion_xanadu">intu Xanadú, Arroyomolinos, Madrid</string>
+    <string name="direccion_el_corte_ingles">El Corte Inglés Castellana, Madrid</string>
+    <string name="direccion_parquesur">Westfield Parquesur, Leganés, Madrid</string>
+    <string name="direccion_plenilunio">Centro Comercial Plenilunio, Madrid</string>
+    <string name="direccion_la_gavia">Centro Comercial La Gavia, Madrid</string>
+    <string name="direccion_plaza_norte">Centro Comercial Plaza Norte 2, San Sebastián de los Reyes, Madrid</string>
+    <string name="direccion_tres_aguas">Centro Comercial TresAguas, Alcorcón, Madrid</string>
+    <string name="direccion_islazul">Centro Comercial Islazul, Madrid</string>
+    <string name="direccion_plaza_rio">Centro Comercial Plaza Río 2, Madrid</string>
+    <string name="direccion_abc_serrano">Centro Comercial ABC Serrano, Madrid</string>
+    <string name="direccion_sexta_avenida">Centro Comercial Sexta Avenida, Madrid</string>
+
     <string name="faunia">Faunia Madrid</string>
     <string name="faunia_desc">Parque temático de la naturaleza único en Europa, ubicado en el distrito de Vicálvaro. Con más de 14 hectáreas recreadas en ecosistemas como la jungla amazónica, los polos o el bosque africano, alberga más de 3.000 animales de 300 especies diferentes. Ofrece experiencias interactivas como nadar con leones marinos, alimentar pingüinos y espectáculos educativos para toda la familia.</string>
     <string name="title_centros_comerciales">Centros Comerciales for you</string>
