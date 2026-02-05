@@ -2,13 +2,16 @@ package com.example.p4_madrid_marcos_jorge_alejandro.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
@@ -18,8 +21,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -78,11 +83,24 @@ fun ModalInfo(onDismissModal: () -> Unit, site: Site) {
                 Modifier
                     .fillMaxWidth()
                     .padding(end = 16.dp, start = 16.dp, bottom = 28.dp)
+                    .shadow(
+                        elevation = 8.dp,
+                        shape = Shapes.extraLarge,
+                        spotColor = MaterialTheme.colorScheme.primary
+                    ),
             ) {
-                Text(
-                    text = stringResource(R.string.ver_ubicacion_buton),
-                    color = Color.White,
-                )
+                Row (verticalAlignment = Alignment.CenterVertically){
+                    Icon(
+                        painter = painterResource(R.drawable.round_directions_24),
+                        contentDescription = null,
+                        tint = Color.White
+                    )
+                    Spacer(Modifier.width(10.dp))
+                    Text(
+                        text = stringResource(R.string.ver_ubicacion_buton),
+                        color = Color.White,
+                    )
+                }
             }
         }
     }
