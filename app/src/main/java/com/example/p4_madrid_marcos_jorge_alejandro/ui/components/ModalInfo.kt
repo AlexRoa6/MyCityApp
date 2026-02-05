@@ -21,6 +21,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -28,10 +29,13 @@ import androidx.compose.ui.unit.sp
 import com.example.p4_madrid_marcos_jorge_alejandro.R
 import com.example.p4_madrid_marcos_jorge_alejandro.model.Site
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.Shapes
+import com.example.p4_madrid_marcos_jorge_alejandro.ui.utilidades.openMap
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ModalInfo(onDismissModal: () -> Unit, site: Site) {
+    val direccion = stringResource(site.direccionRes)
+    val context = LocalContext.current
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     var fontSize by remember { mutableStateOf(14.sp) }
     ModalBottomSheet(
@@ -69,7 +73,7 @@ fun ModalInfo(onDismissModal: () -> Unit, site: Site) {
                 fontSize = fontSize
             )
             Button(
-                {},
+                { openMap(direccion, context) },
                 Modifier
                     .fillMaxWidth()
                     .padding(end = 16.dp, start = 16.dp, bottom = 28.dp)
