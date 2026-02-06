@@ -1,6 +1,6 @@
 package com.example.p4_madrid_marcos_jorge_alejandro.ui.components
-
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -31,7 +32,11 @@ fun SiteCard(site: Site, onClick: () -> Unit, modifier: Modifier = Modifier) {
             .clickable(onClick = onClick),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(Modifier.clip(Shapes.large)) {
+        Box(Modifier
+            .shadow(24.dp, shape = Shapes.large, spotColor = MaterialTheme.colorScheme.primary)
+            .clip(Shapes.large)
+            .border(1.dp, color = MaterialTheme.colorScheme.primary, shape = Shapes.large)
+        ) {
             Image(
                 painter = painterResource(site.imgRes),
                 contentDescription = null,
