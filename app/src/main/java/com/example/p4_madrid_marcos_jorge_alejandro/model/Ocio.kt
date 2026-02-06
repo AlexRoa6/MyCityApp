@@ -6,3 +6,4 @@ class Ocio (nameRes: Int, imgRes: Int, descriptionRes: Int, direccionRes: Int):
 
 
 }
+
