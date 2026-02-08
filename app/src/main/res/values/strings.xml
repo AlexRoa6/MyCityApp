@@ -207,4 +207,6 @@ s
 
 
     <string name="comercialcenter">Centros Comerciales</string>
+    <string name="deportes">Actividades Deportivas</string>
+    <string name="ocio">Ocio en Madrid</string>
 </resources>

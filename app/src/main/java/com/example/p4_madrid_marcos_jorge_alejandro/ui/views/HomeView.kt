@@ -32,10 +32,17 @@ fun HomeView() {
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
         CardActividad(
-            image = R.drawable.mutuaopenmadrid_pista,
+            image = R.drawable.shopping,
             title = stringResource(id = R.string.comercialcenter)
         )
-
+        CardActividad(
+            image = R.drawable.deportes,
+            title = stringResource(id = R.string.deportes)
+        )
+        CardActividad(
+            image = R.drawable.ocio,
+            title = stringResource(id = R.string.ocio)
+        )
 
         //tengo que hacer aqui mas Cardactivity
     }
