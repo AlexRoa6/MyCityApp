@@ -66,40 +66,50 @@
     <string name="parqueAtracc">Parque de atracciones de Madrid</string>
     <string name="desc_Parque"> El Parque de Atracciones de Madrid, con sus atracciones únicas para los más mayores
         y con atracciones únicas con temáticas Nickelodeon para los más pequeños.</string>
+    <string name="direcc_atracciones">Casa de Campo, s/n, 28011 Madrid</string>
 
     <string name="warner"> Parque Warner Madrid</string>
     <string name="desc_Warner"> El Parque Warner de Madrid es uno de los mejores de toda Europa.
         Desde atracciones inimaginables de la mano de superman, hasta los espectaculos más increibles
         para los mas peques de la casa de la mano de bob esponja y patricio </string>
+    <string name="direcc_warner">Parque Warner De Madrid, 28330, San Martín de la Vega</string>
+
+    <string name="faunia">Faunia Madrid</string>
+    <string name="faunia_desc">Parque temático de la naturaleza único en Europa, ubicado en el distrito de Vicálvaro.
+        Con más de 14 hectáreas recreadas en ecosistemas como la jungla amazónica, los polos o el bosque africano,
+        alberga más de 3.000 animales de 300 especies diferentes. Ofrece experiencias interactivas como nadar con leones marinos,
+        alimentar pingüinos y espectáculos educativos para toda la familia.</string>
+    <string name="direcc_faunia">Avenida de las Comunidades, 28, 28032 Madrid</string>
 
     <string name="zoo_madrid">Zoo Aquarium de Madrid</string>
     <string name="desc_zoo">Parque zoológico y acuario que alberga animales de los cinco continentes, combinando conservación,
         educación y ocio en un entorno natural dentro de la Casa de Campo.</string>
 
-    <string name="faunia_madrid">Faunia Madrid</string>
-    <string name="desc_faunia">Parque temático de naturaleza en Madrid que combina zoológico y jardín botánico, con ecosistemas de todo el mundo
-        y experiencias educativas sobre la biodiversidad.</string>
-
     <string name="museo_prado">Museo del Prado</string>
     <string name="desc_prado">Uno de los museos de arte más importantes del mundo, famoso por su colección
         de pintura europea, con obras maestras de Velázquez, Goya, El Bosco y Rubens.</string>
+    <string name="direcc_pardo">Paseo del Prado, s/n 28014</string>
 
     <string name="museo_thyssen">Museo Thyssen-Bornemisza</string>
     <string name="desc_thyssen">Museo de arte que completa el “Triángulo del Arte” de Madrid, con una amplia colección que recorre 
         desde el Renacimiento hasta el arte moderno.</string>
+    <string name="direcc_thyssen">Paseo del Prado, 8, 28014 Madrid</string>
     
     <string name="museo_geominero">Museo Geominero de Madrid</string>
     <string name="desc_geomin">Museo científico dedicado a la geología y la paleontología, conocido por su impresionante
         colección de minerales, fósiles y su histórica sala central.</string>
+    <string name="direcc_geominero">Calle de Ríos Rosas, 23, 28003 Madrid</string>
 
     <string name="museo_reina_sofia">Museo Reina Sofía</string>
     <string name="desc_sofia">Museo nacional de arte moderno y contemporáneo de España, reconocido por albergar obras clave del siglo XX y XXI, especialmente el Guernica de Pablo Picasso, junto a creaciones de Dalí,
         Miró y otros artistas vanguardistas.</string>
+    <string name="direcc_sofia">Calle Santa Isabel, 52</string>
 
     <string name="paintball_madrid">Paintball Madrid Action Live</string>
     <string name="desc_paint_action">Paintball Madrid Action Live es uno de los centros de paintball más populares y completos de Madrid,
         ideal para grupos de amigos, familias, despedidas de soltero, cumpleaños y eventos de empresa.
         Ofrecen una experiencia de ocio activo al aire libre con escenarios diseñados para maximizar la diversión y la estrategia.</string>
+    <string name="direcc_paintball">Av del Cardenal Herrera Oria, 173, local 1, Fuencarral-El Pardo, 28034 Madrid</string>
 
     <string name="kars_sainz">Carlos Sainz Karting Las Rozas</string>
     <string name="desc_kars">Pensado para quienes buscan velocidad, adrenalina y diversión en un entorno moderno y seguro.
@@ -107,32 +117,38 @@
         de conducción dinámica y emocionante, apta tanto para principiantes como para pilotos más experimentados. Dispone de karts
         adaptados para jóvenes y adultos, cronometraje en tiempo real y todas las medidas de seguridad necesarias, lo que lo convierte en un plan ideal para familias,
         grupos de amigos, celebraciones y eventos de empresa, además de contar con zonas de ocio y servicios que permiten disfrutar de una experiencia completa más allá de la pista.</string>
+    <string name="direcc_kars">Calle Bruselas, 3, en el Parque Empresarial Európolis</string>
 
     <string name="pub_el_tren">Pub El Tren</string>
     <string name="desc_pub">Una cocteleria cerca del metro de Islas Filipinas. Disfruta de sus numerosos cocteles con tus amigos
     y acuerdate de preguntar por los juegos de mesa que tienen. Perfecto para una tarde de risas con amigos o la familia.</string>
+<string name="direcc_el_tren">Calle de Blasco de Garay 47, 28015 Madrid</string>
 
     <string name="laser_tag">Planet Laser Madrid</string>
     <string name="desc_laser">Planet Laser te ofrece una Arena de Laser Tag Indoor que te sorprenderá, con una ambientación
         y un escenario único, con un equipamiento con la última tecnología, te llevaran más allá de los juegos clásicos de Laser tag,
         tu chaleco tendrá superpoderes, y podrás cambiar de tipo de arma en tu blaster. Te ofrecemos hasta 12 modos de juego, antes de
         empezar el juego, según el grupo, destreza o experiencia en este tipo de juegos, el Game Master os pondrá el modo más adecuado para cada caso.</string>
+    <string name="direcc_laser">Calle Clara del Rey, 46, 28002 Madrid</string>
 
     <string name="tirolinas">AVENTURA AMAZONIA CERCEDILLA</string>
     <string name="desc_tirolinas">Uno de los parques de aventura más grandes de Europa, se encuentra en pleno corazón de la sierra,
         en el Valle de la Fuenfría de la Sierra de Guadarrarma, el mayor enclave de Ocio en Naturaleza de la Comunidad de Madrid,
         donde se vive la Aventura en estado puro.Vas a disfrutar de 7 Circuitos de aventura con 114 juegos en los árboles, y 33 tirolinas ,
         en el mayor parque Multiaventura para adultos y niños de Madrid, incluyendo el nuevo CANOPY, único circuito en Madrid solo de tirolinas con más de 470 m.</string>
+    <string name="direcc_tirolinas">Parque Recreativo de las Berceas Carretera de las Dehesas, 28470 Cercedilla, Madrid</string>
 
     <string name="retiro">Parque de El Retiro</string>
     <string name="desc_retiro">el pulmón verde más querido de Madrid, un lugar perfecto para desconectar, pasear y disfrutar al aire libre en pleno centro de la ciudad.
         Con sus amplios jardines, caminos arbolados, estanques y rincones emblemáticos, es ideal tanto para un plan tranquilo como para quedar con amigos,
         hacer deporte o simplemente sentarse a relajarse. Un sitio con historia, encanto y muy buen rollo, donde siempre apetece volver</string>
+    <string name="direcc_retiro">Plaza de la Independencia, 7, 28001</string>
 
     <string name="parque_europa">Parque Europa</string>
     <string name="desc_parque_europa">espacio único al aire libre que reúne réplicas de algunos de los monumentos más emblemáticos de Europa en un entorno amplio y cuidado.
         Pasear por el parque es como hacer un pequeño viaje por el continente, con representaciones de lugares tan icónicos como la Torre Eiffel, el Puente de Londres,
         la Puerta de Brandeburgo o la Fontana di Trevi.</string>
+    <string name="direcc_parque_europa">Paseo. de los Cipreses, s/n. 28850. Torrejón de Ardoz</string>
 
 
     <!-- CENTROS COMERCIALES DE MADRID -->
@@ -191,8 +207,6 @@ s
     <string name="direccion_abc_serrano">Centro Comercial ABC Serrano, Madrid</string>
     <string name="direccion_sexta_avenida">Centro Comercial Sexta Avenida, Madrid</string>
 
-    <string name="faunia">Faunia Madrid</string>
-    <string name="faunia_desc">Parque temático de la naturaleza único en Europa, ubicado en el distrito de Vicálvaro. Con más de 14 hectáreas recreadas en ecosistemas como la jungla amazónica, los polos o el bosque africano, alberga más de 3.000 animales de 300 especies diferentes. Ofrece experiencias interactivas como nadar con leones marinos, alimentar pingüinos y espectáculos educativos para toda la familia.</string>
     <string name="title_centros_comerciales">Centros Comerciales for you</string>
     <string name="centros_comerciales_description">Descubre los mejores centros comerciales</string>
     <string name="centros_comerciales_topBar">Centros Comerciales</string>
