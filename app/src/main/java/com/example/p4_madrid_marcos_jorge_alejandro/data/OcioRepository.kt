@@ -66,6 +66,7 @@ class OcioRepository {
 //                nameRes = R.string.pub_el_tren,
 //                imgRes = R.drawable.pub_tren,
 //                descriptionRes = R.string.desc_pub
+
 //            ),
 //
 //            Ocio(

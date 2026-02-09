@@ -2,6 +2,7 @@ package com.example.p4_madrid_marcos_jorge_alejandro.ui.views
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.LazyColumn
@@ -11,9 +12,12 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -25,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import com.example.p4_madrid_marcos_jorge_alejandro.R
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.components.CustomBottomBar
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.P4_Madrid_Marcos_Jorge_AlejandroTheme
+import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.Shapes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -44,9 +49,14 @@ fun HomeView(
             )},
 
         topBar = {
-            CenterAlignedTopAppBar(
-                { Text(text = stringResource(R.string.home_title)) },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background)) }
+            Column {
+                CenterAlignedTopAppBar(
+                    { Text(text = stringResource(R.string.home_title)) },
+                    colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background)
+                )
+                HorizontalDivider(thickness = 1.dp, color = Color.Gray.copy(alpha = 0.1f))
+            }
+        }
 
     ){ paddingValues ->
         LazyColumn(
@@ -96,9 +106,10 @@ fun CardActividad(
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .aspectRatio(2f),
-        shape = RoundedCornerShape(20.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
+            .aspectRatio(2f)
+            .shadow(8.dp, shape = Shapes.large, spotColor = MaterialTheme.colorScheme.primary)
+            .clip(Shapes.large)
+            .border(1.dp, color = MaterialTheme.colorScheme.primary, shape = Shapes.large),
     ) {
         Box {
 
@@ -151,7 +162,7 @@ fun CardActividad(
                 ) {
                     Icon(
                         imageVector = Icons.AutoMirrored.Filled.ArrowForward,
-                        contentDescription = "Ir",
+                        contentDescription = null,
                         tint = Color.White
                     )
                 }
