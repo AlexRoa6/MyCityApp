@@ -203,4 +203,11 @@ s
     <string name="ocio_title">Otras Actividades for you\n</string>
     <string name="descripcion_ocio">Los mejores parques, museos, zoos...</string>
     <string name="ocio_title_topbar">Ocio</string>
+    <string name="centros_comerciales_boton">Centros Comerciales</string>
+
+
+    <string name="comercialcenter">Centros Comerciales</string>
+    <string name="deportes">Actividades Deportivas</string>
+    <string name="ocio">Ocio en Madrid</string>
+    <string name="home_title">Conoce Madrid</string>
 </resources>

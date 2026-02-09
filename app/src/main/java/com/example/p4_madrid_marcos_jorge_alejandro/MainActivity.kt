@@ -8,7 +8,6 @@ import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
-import androidx.navigation.NavHost
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -25,57 +24,61 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             P4_Madrid_Marcos_Jorge_AlejandroTheme {
-                P4_Madrid_Marcos_Jorge_AlejandroApp()
+                AppNavigation()
             }
         }
     }
 }
 
 @Composable
-fun AppNavigation(){
+fun AppNavigation() {
     val navController = rememberNavController()
 
-    NavHost (
+    NavHost(
         navController = navController,
-        startDestination = AppDestination.SHOPING_CENTER.label,
+        startDestination = AppDestination.HOME.label,
         enterTransition = { EnterTransition.None },
         exitTransition = { ExitTransition.None },
         popEnterTransition = { EnterTransition.None },
         popExitTransition = { ExitTransition.None }
-    ){
-        composable (route = AppDestination.SHOPING_CENTER.label){
+    ) {
+
+        composable(route = AppDestination.HOME.label) {
+            HomeView(
+                navigateShoping = { navController.navigate(AppDestination.SHOPING_CENTER.label)},
+                navigateOcio = { navController.navigate(AppDestination.OCIO.label) },
+                navigateSport = { navController.navigate(AppDestination.SPORTS.label) },
+                onClickNavigation = { navController.navigate(it) }
+            )
+        }
+
+        composable(route = AppDestination.SHOPING_CENTER.label) {
             ShopingCenterView(
                 onBackButtonClicked = { navController.navigate(AppDestination.HOME.label) },
                 onClickNavigation = { navController.navigate(it) }
             )
         }
 
-        composable (route = AppDestination.OCIO.label){
+        composable(route = AppDestination.OCIO.label) {
             OcioView(
                 onBackButtonClicked = { navController.navigate(AppDestination.HOME.label) },
                 onClickNavigation = { navController.navigate(it) }
             )
         }
 
-        composable (route = AppDestination.SPORTS.label){
+        composable(route = AppDestination.SPORTS.label) {
             SportsView(
                 onBackButtonClicked = { navController.navigate(AppDestination.HOME.label) },
                 onClickNavigation = { navController.navigate(it) }
             )
         }
-
-        composable (route = AppDestination.HOME.label){
-            HomeView()
-        }
     }
-
 }
 
 @PreviewScreenSizes
 @Composable
 fun P4_Madrid_Marcos_Jorge_AlejandroApp() {
-    AppNavigation()
+    P4_Madrid_Marcos_Jorge_AlejandroTheme {
+        AppNavigation()
+    }
 }
-
-
-

@@ -19,6 +19,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.Shapes
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.views.AppDestination
 
@@ -38,19 +39,20 @@ fun CustomBottomBar(currentDestination: AppDestination, onDestinationSelected: (
             verticalAlignment = Alignment.CenterVertically,
         ) {
             AppDestination.entries.forEach { destination ->
-                ItemNav(destination, destination == currentDestination, { onDestinationSelected(destination) })
+                ItemNav(destination, destination == currentDestination, { onDestinationSelected(destination) },
+                    Modifier.weight(1f))
             }
         }
     }
 }
 
 @Composable
-fun ItemNav(destination: AppDestination, isSelected: Boolean, onClick: () -> Unit) {
+fun ItemNav(destination: AppDestination, isSelected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
     val backGroundColor = if (!isSelected) MaterialTheme.colorScheme.background else MaterialTheme.colorScheme.primary
     val color = if (!isSelected) MaterialTheme.colorScheme.secondary else Color.White
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
+        modifier = modifier
             .clip(Shapes.large)
             .background(backGroundColor)
             .clickable(onClick = onClick)
@@ -61,6 +63,6 @@ fun ItemNav(destination: AppDestination, isSelected: Boolean, onClick: () -> Uni
             contentDescription = null,
             tint = color
         )
-        Text(text = destination.label, color = color)
+        Text(text = destination.label, color = color, fontSize = 12.sp)
     }
 }
