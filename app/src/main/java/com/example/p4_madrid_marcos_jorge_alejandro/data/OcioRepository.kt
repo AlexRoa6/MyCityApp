@@ -16,6 +16,13 @@ class OcioRepository {
             ),
 
             Ocio(
+                nameRes = R.string.zoo_madrid,
+                imgRes = R.drawable.zoo_madrid,
+                descriptionRes = R.string.desc_zoo,
+                direccionRes = R.string.direcc_atracciones
+            ),
+
+            Ocio(
                 nameRes = R.string.parqueAtracc,
                 imgRes = R.drawable.parque_atracciones,
                 descriptionRes = R.string.desc_Parque,
