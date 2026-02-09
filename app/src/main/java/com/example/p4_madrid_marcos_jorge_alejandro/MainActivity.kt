@@ -47,7 +47,8 @@ fun AppNavigation() {
             HomeView(
                 navigateShoping = { navController.navigate(AppDestination.SHOPING_CENTER.label)},
                 navigateOcio = { navController.navigate(AppDestination.OCIO.label) },
-                navigateSport = { navController.navigate(AppDestination.SPORTS.label) }
+                navigateSport = { navController.navigate(AppDestination.SPORTS.label) },
+                onClickNavigation = { navController.navigate(it) }
             )
         }
 

@@ -3,6 +3,8 @@ package com.example.p4_madrid_marcos_jorge_alejandro.ui.views
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -11,7 +13,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -21,33 +22,67 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.p4_madrid_marcos_jorge_alejandro.R
+import com.example.p4_madrid_marcos_jorge_alejandro.ui.components.CustomBottomBar
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.P4_Madrid_Marcos_Jorge_AlejandroTheme
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeView(navigateShoping: () -> Unit, navigateSport: () -> Unit, navigateOcio: () -> Unit) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(20.dp)
-    ) {
-        CardActividad(
-            image = R.drawable.shopping,
-            title = stringResource(id = R.string.comercialcenter),
-            navigate = navigateShoping
-        )
-        CardActividad(
-            image = R.drawable.deportes,
-            title = stringResource(id = R.string.deportes),
-            navigate = navigateSport
-        )
-        CardActividad(
-            image = R.drawable.ocio,
-            title = stringResource(id = R.string.ocio),
-            navigate = navigateOcio
-        )
+fun HomeView(
+    navigateShoping: () -> Unit,
+    navigateSport: () -> Unit,
+    navigateOcio: () -> Unit,
+    onClickNavigation: (String) -> Unit
+) {
+    val currentDestination = AppDestination.HOME
+    Scaffold (
 
-        //tengo que hacer aqui mas Cardactivity
+        bottomBar = {
+            CustomBottomBar(
+                currentDestination = currentDestination,
+                onDestinationSelected = { onClickNavigation(it.label) }
+            )},
+
+        topBar = {
+            CenterAlignedTopAppBar(
+                { Text(text = stringResource(R.string.home_title)) },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background)) }
+
+    ){ paddingValues ->
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(
+                    start = 16.dp,
+                    end = 16.dp,
+                    top = paddingValues.calculateTopPadding() + 16.dp,
+                    bottom = paddingValues.calculateBottomPadding()
+                ),
+            verticalArrangement = Arrangement.SpaceEvenly
+        ) {
+            item {
+                CardActividad(
+                    image = R.drawable.shopping,
+                    title = stringResource(id = R.string.comercialcenter),
+                    navigate = navigateShoping
+                )
+            }
+            item {
+                CardActividad(
+                    image = R.drawable.deportes,
+                    title = stringResource(id = R.string.deportes),
+                    navigate = navigateSport
+                )
+            }
+            item {
+                CardActividad(
+                    image = R.drawable.ocio,
+                    title = stringResource(id = R.string.ocio),
+                    navigate = navigateOcio
+                )
+            }
+
+
+        }
     }
 }
 
@@ -99,8 +134,10 @@ fun CardActividad(
                     text = title,
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
-                    style = MaterialTheme.typography.titleLarge
+                    style = MaterialTheme.typography.titleLarge,
+                    modifier = Modifier.weight(1f)
                 )
+
 
                 Button(
                     onClick = { navigate() },
