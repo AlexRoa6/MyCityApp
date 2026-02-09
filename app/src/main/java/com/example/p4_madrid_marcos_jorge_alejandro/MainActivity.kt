@@ -45,7 +45,9 @@ fun AppNavigation() {
 
         composable(route = AppDestination.HOME.label) {
             HomeView(
-
+                navigateShoping = { navController.navigate(AppDestination.SHOPING_CENTER.label)},
+                navigateOcio = { navController.navigate(AppDestination.OCIO.label) },
+                navigateSport = { navController.navigate(AppDestination.SPORTS.label) }
             )
         }
 

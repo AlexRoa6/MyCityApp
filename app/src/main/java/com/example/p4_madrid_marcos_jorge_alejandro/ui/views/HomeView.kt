@@ -24,7 +24,7 @@ import com.example.p4_madrid_marcos_jorge_alejandro.R
 import com.example.p4_madrid_marcos_jorge_alejandro.ui.theme.P4_Madrid_Marcos_Jorge_AlejandroTheme
 
 @Composable
-fun HomeView() {
+fun HomeView(navigateShoping: () -> Unit, navigateSport: () -> Unit, navigateOcio: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -33,15 +33,18 @@ fun HomeView() {
     ) {
         CardActividad(
             image = R.drawable.shopping,
-            title = stringResource(id = R.string.comercialcenter)
+            title = stringResource(id = R.string.comercialcenter),
+            navigate = navigateShoping
         )
         CardActividad(
             image = R.drawable.deportes,
-            title = stringResource(id = R.string.deportes)
+            title = stringResource(id = R.string.deportes),
+            navigate = navigateSport
         )
         CardActividad(
             image = R.drawable.ocio,
-            title = stringResource(id = R.string.ocio)
+            title = stringResource(id = R.string.ocio),
+            navigate = navigateOcio
         )
 
         //tengo que hacer aqui mas Cardactivity
@@ -51,7 +54,8 @@ fun HomeView() {
 @Composable
 fun CardActividad(
     image: Int,
-    title: String
+    title: String,
+    navigate: () -> Unit
 ) {
     Card(
         modifier = Modifier
@@ -99,7 +103,7 @@ fun CardActividad(
                 )
 
                 Button(
-                    onClick = {},
+                    onClick = { navigate() },
                     shape = CircleShape,
                     modifier = Modifier.size(44.dp),
                     contentPadding = PaddingValues(0.dp),
@@ -122,6 +126,6 @@ fun CardActividad(
 @Composable
 fun HomeViewPreview() {
     P4_Madrid_Marcos_Jorge_AlejandroTheme {
-        HomeView()
+//        HomeView()
     }
 }
