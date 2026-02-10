@@ -16,15 +16,19 @@ private val DarkColorScheme = darkColorScheme(
     secondary = SecundarioDark,
     background = BackgroundDark,
     onBackground = CardBackgroundDark,
-    tertiary = TextColorDark
+    tertiary = TextColorDark,
+    outline = BackgroundDarkDifuminado,
+    scrim = BorderColorDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = PrimaryLight,
+    primary = PrimaryDark,
     secondary = SecundarioLight,
     background = BackgroundLight,
     onBackground = CardBackgroundLight,
-    tertiary = TextColorLight
+    tertiary = TextColorLight,
+    outline = BackgroundLightDifuminado,
+    scrim = BorderColorLight
 
 )
 

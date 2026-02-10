@@ -5,13 +5,15 @@ import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.ui.graphics.vector.ImageVector
+import com.example.p4_madrid_marcos_jorge_alejandro.R
 
 enum class AppDestination (
     val label: String,
-    val icon: ImageVector,
+    val icon: Int,
 ) {
 
-    FAVORITES("Favorites", Icons.Default.Favorite),
-    HOME("Home", Icons.Default.Home),
-    PROFILE("Profile", Icons.Default.AccountBox),
+    HOME("Inicio", R.drawable.round_home_24),
+    SHOPING_CENTER("Tiendas", R.drawable.baseline_shopping_bag_24),
+    SPORTS("Deportes", R.drawable.sharp_sports_basketball_24),
+    OCIO("Ocio", R.drawable.baseline_park_24),
 }
