@@ -224,4 +224,13 @@ s
     <string name="deportes">Actividades Deportivas</string>
     <string name="ocio">Ocio en Madrid</string>
     <string name="home_title">Conoce Madrid</string>
+
+
+    <!-- Direcciones de deportes -->
+    <string name="direccion_bernabeu">Av. de Concha Espina, 1, 28036 Madrid</string>
+    <string name="direccion_wanda">Av. de Luis Aragonés, 4, 28022 Madrid</string>
+    <string name="direccion_wizink">Av. Felipe II, s/n, 28009 Madrid</string>
+    <string name="direccion_maraton">Salida: Paseo de la Castellana, Madrid</string>
+    <string name="direccion_san_silvestre">Salida: Paseo de Recoletos, Madrid</string>
+    <string name="direccion_mutua">Parque Manzanares, Cam. de Perales, 23, 28041 Madrid</string>
 </resources>
